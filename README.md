@@ -15,6 +15,10 @@ WEBHOOK_URL="https://hooks.slack.com/services/..."
 
 ## Installation
 
+- Install Playwright first for crawling.
+```bash
+npx playwright install --with-deps
+```
 ```bash
 npm install
 ```
