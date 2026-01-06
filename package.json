@@ -1,0 +1,15 @@
+{
+  "name": "watching-dog",
+  "version": "1.0.0",
+  "description": "Simple web crawler that handles CSR elements",
+  "main": "crawler.js",
+  "type": "module",
+  "scripts": {
+    "start": "node crawler.js",
+    "monitor": "node stock-monitor.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "playwright": "^1.40.0"
+  }
+}
