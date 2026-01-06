@@ -7,7 +7,14 @@ import { chromium } from 'playwright';
  */
 async function crawl(url) {
   const browser = await chromium.launch({
-    headless: true
+    headless: true,
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+      '--disable-dev-shm-usage',
+      '--disable-gpu',
+      '--disable-software-rasterizer'
+    ]
   });
 
   try {
