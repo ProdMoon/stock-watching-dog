@@ -1,4 +1,4 @@
-import { chromium } from 'playwright';
+import { firefox } from 'playwright';
 
 /**
  * Web crawler that fetches full HTML including CSR elements
@@ -6,15 +6,8 @@ import { chromium } from 'playwright';
  * @returns {Promise<string>} Full HTML content
  */
 async function crawl(url) {
-  const browser = await chromium.launch({
+  const browser = await firefox.launch({
     headless: true,
-    args: [
-      '--no-sandbox',
-      '--disable-setuid-sandbox',
-      '--disable-dev-shm-usage',
-      '--disable-gpu',
-      '--disable-software-rasterizer'
-    ]
   });
 
   try {
