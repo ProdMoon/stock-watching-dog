@@ -18,7 +18,7 @@ async function crawl(url) {
     // Navigate to URL and wait for DOM to load
     await page.goto(url, {
       waitUntil: 'domcontentloaded',
-      timeout: 30000
+      timeout: 60000
     });
 
     // Wait for CSR content to render
